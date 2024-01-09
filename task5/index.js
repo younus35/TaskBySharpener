@@ -1,0 +1,10 @@
+const head = document.getElementById('sub-heading');
+head.style.fontStyle = 'italic';
+const para = document.createElement('p');
+const paratext = document.createTextNode('total fruits: 4');
+para.appendChild(paratext);
+const divs = document.getElementsByTagName('div');
+const ins = divs[1];
+const fruits = document.querySelector('.fruits');
+ins.insertBefore(para,fruits);
+para.id = 'fruits-total';
